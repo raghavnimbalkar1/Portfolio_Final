@@ -13,10 +13,10 @@ function App() {
     <div className="App container">
       <Header />
       <About />
+      <Education />
       <WorkExperience />
       <Projects />
       <Skills />
-      <Education />
       <ContactLinks />
     </div>
   );

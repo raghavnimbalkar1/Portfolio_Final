@@ -1,9 +1,13 @@
 import React from "react";
+import unihavenImg from "./chaintix.png";
+import digitalShelfImg from "./chaintix.png";
+import chainTixImg from "./chaintix.png";
 
 const projects = [
-  { title: "Unihaven", year: "2021", image: "./Unihaven.jpg" },
-  { title: "DigitalShelf", year: "2019", image: "./chaintix.png" },
-  { title: "ChainTix", year: "2016", image: "./chaintix.png" },
+  { title: "Unihaven", image: unihavenImg, link: "https://github.com/raghavnimbalkar1/UniHaven" },
+  { title: "DigitalShelf", image: digitalShelfImg, link: "https://github.com/raghavnimbalkar1/DigitalShelf" },
+  { title: "ChainTix", image: chainTixImg, link: "https://github.com/raghavnimbalkar1/ChainTix" },
+  { title: "ChainTix", image: chainTixImg, link: "https://github.com/raghavnimbalkar1/ChainTix" },
 ];
 
 function Projects() {
@@ -13,9 +17,12 @@ function Projects() {
       <div className="project-list">
         {projects.map((project, index) => (
           <div className="project-item" key={index}>
-            <img src={project.image} alt="photo" />
-            <p>{project.title}</p>
-            <p>{project.year}</p>
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <img src={project.image} alt={project.title} />
+            </a>
+            <div className="project-info">
+              <p>{project.title}</p>
+            </div>
           </div>
         ))}
       </div>

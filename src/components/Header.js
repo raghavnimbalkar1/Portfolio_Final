@@ -14,8 +14,13 @@ function Header() {
         </div>
       </div>
       <div className="buttons">
-        <button>Connect</button>
-        <button>Message</button>
+        <a href="https://www.linkedin.com/in/raghavnimbalkar/" target="_blank" rel="noopener noreferrer">
+          <button>Connect</button>
+        </a>
+        {/* Link to Gmail with pre-filled email */}
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=raghav.nimbalkar@gmail.com&su=connection%20&body=I%20would%20like%20to%20connect..." target="_blank" rel="noopener noreferrer">
+          <button>Message</button>
+        </a>
       </div>
     </header>
   );

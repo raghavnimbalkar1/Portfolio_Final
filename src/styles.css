@@ -1,40 +1,29 @@
+/* Global Styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
+  background-color: #F2F0EF;
   color: #333;
   margin: 0;
   padding: 0;
 }
 
+h2, .section-title {
+  color: #3c3d3e;
+  margin-bottom: 10px;
+  font-size: 1.6em;
+}
 
 .container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 30px;
-}
-.profile-details {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Header Banner */
-.header {
-  height: 150px;
-  display: flex;
-  align-items: center;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #ffffff;
 }
 
 /* Profile Section */
 .profile {
-  text-align: left;
   display: flex;
   align-items: center;
+  margin-bottom: 15px; /* Reduced margin */
 }
 
 .profile img {
@@ -42,8 +31,7 @@ body {
   height: 140px;
   border-radius: 50%;
   margin-right: 20px;
-  object-fit: contain;      
-  
+  object-fit: contain;
 }
 
 .profile h1 {
@@ -52,8 +40,21 @@ body {
 }
 
 .profile p {
-  color: #555;
+  color: #514f4f;
   margin: 5px 0;
+}
+
+/* Header Banner */
+.header {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  margin-bottom: 10px; /* Reduced margin */
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #77ad95;
+  border-bottom: 1px solid #fff;
 }
 
 /* Buttons */
@@ -76,135 +77,55 @@ button {
   color: #8a8787;
 }
 
-/* Section Headers */
-.section-title {
-  font-size: 1.3em;
-  margin-bottom: 10px;
-  font-weight: bold;
+/* Card Styling for Projects */
+.projects {
+  padding: 10px;
+  margin-bottom: 0; /* No margin */
 }
 
-/* Work Experience */
-.experience, .projects {
-  margin-bottom: 20px;
-}
-
-.experience-item, .project-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.experience-item p, .project-item p {
-  margin: 0;
-}
-
-.experience-date {
-  color: #777;
-  font-size: 0.9em;
-}
-
-/* Projects */
-.projects-grid {
-  display: flex;
-  gap: 10px;
-  justify-content: space-between;
+.projects h2 {
+  color: #3c3d3e;
+  margin-bottom: 15px; 
+  font-size: 1.6em;
 }
 
 .project-item {
-  background-color: #fff;
+  background-color: #f2f0ef;
   border-radius: 8px;
   padding: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 30%;
+  width: 220px;
+  margin: 0 10px 10px 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-item img {
   width: 100%;
+  height: auto;
+  object-fit: cover;
   border-radius: 8px;
 }
 
-/* Skills */
-.skills {
+.project-info {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.project-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
 }
 
-.skill-item {
-  background-color: #f1f1f1;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-size: 14px;
-  color: #555;
-}
-
-/* Education */
-.education-item {
-  font-size: 0.9em;
-  color: #555;
-  margin: 5px 0;
-}
-
-/* Contact Links */
-.contact-links {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.contact-link {
-  text-decoration: none;
-  color: #555;
-  font-size: 0.9em;
-}
-
-.contact-link img {
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
-}
-
-/* Header Styling */
-
-/* Button Styling */
-button {
-  background-color: #9d9d9d;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  margin: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #7a7a7a;
-}
-
-/* Card Styling for Projects */
-.project-card {
-  border: 1px solid #ca9292;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  width: 100%;
-}
-
-.project-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-/* Aligning Skills and Contact Links */
+/* Skills and Contact Links */
 .skills, .contact-links {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-bottom: 0; /* No margin */
 }
 
 .skill-item, .contact-item {
@@ -212,5 +133,142 @@ button:hover {
   border-radius: 10px;
   padding: 10px;
   text-align: center;
+}
+
+.contact-link img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Button Styling */
+button {
+  background-color: #855e5c;
+  color: white;
+  padding: 10px 20px;
+}
+
+button:hover {
+  background-color: #ece5e5;
+  color: black;
+}
+
+/* Skills Section */
+.skills {
+  margin-top: 0;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  justify-content: center; /* Center the skill tags */
+}
+
+.skills h2 {
+  color: #3c3d3e;
+  margin-bottom: 0;
+  text-align: left; /* Align the h2 to the left */
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center; /* Center the skill tags */
+}
+
+.skill-tag {
+  background-color: #f1f1f1;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
   width: auto;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background-color: #77ad95;
+  color: #fff;
+}
+
+/* Section Spacing */
+section {
+  margin-bottom: 0; /* Ensuring all sections have no bottom margin */
+}
+
+/* Education Section */
+.education {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.education h2 {
+  color: #3c3d3e;
+  font-size: 1.6em;
+  margin-bottom: 15px;
+}
+
+.education-item {
+  display: flex;
+  justify-content: space-between; /* This will align degree and college to opposite sides */
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.degree {
+  color: #3c3d3e; /* Change this color as needed */
+  font-weight: bold;
+}
+
+.college {
+  color: #476b5b; /* Change this color as needed */
+  text-align: right;
+}
+
+/* Contact Section */
+.contact h2 {
+  color: #3c3d3e;
+  margin-bottom: 15px;
+  font-size: 1.6em;
+  text-align: left;  /* Align the h2 to the left */
+}
+
+.contact .social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center; /* Align cards to the center */
+}
+
+.contact-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  width: 150px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  font-size: 2em;
+  color: #77ad95;
+}
+
+.social-name {
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.username {
+  font-size: 0.9em;
+  color: #777;
 }

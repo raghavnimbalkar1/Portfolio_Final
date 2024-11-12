@@ -1,6 +1,11 @@
 import React from "react";
 
-const skills = ["Illustration", "UI/UX Design", "Front-end Development", "Graphic Design"];
+const skills = [
+  "Illustration",
+  "UI/UX Design",
+  "Front-end Development",
+  "Graphic Design",
+];
 
 function Skills() {
   return (
@@ -8,7 +13,9 @@ function Skills() {
       <h2>Skills</h2>
       <div className="skill-tags">
         {skills.map((skill, index) => (
-          <span key={index}>{skill}</span>
+          <span className="skill-tag" key={index}>
+            {skill}
+          </span>
         ))}
       </div>
     </section>
