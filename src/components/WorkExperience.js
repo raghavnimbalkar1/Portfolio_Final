@@ -1,10 +1,8 @@
 import React from "react";
 
 const experiences = [
-  { role: "Product Designer", company: "Google", year: "2021-Now" },
-  { role: "Product Designer", company: "LinkedIn", year: "2019-2021" },
-  { role: "Product Designer", company: "Accenture", year: "2016-2019" },
-  { role: "Product Design Intern", company: "Facebook", year: "2015" },
+  { role: "Full-Stack Intern", company: "Extensile Pvt.Ltd", year: "Jun 2024 - Aug 2024" },
+  { role: "Front-End Intern", company: "Extensile Pvt.Ltd", year: "Jun 2023 - Aug 2023" },
 ];
 
 function WorkExperience() {
@@ -13,9 +11,12 @@ function WorkExperience() {
       <h2>Work Experience</h2>
       <ul>
         {experiences.map((exp, index) => (
-          <li key={index}>
-            <p>{exp.role}</p>
-            <p>{exp.company} • {exp.year}</p>
+          <li key={index} className="experience-item">
+            <div className="dot"></div>
+            <div className="experience-info">
+              <p className="role">{exp.role}</p>
+              <p className="company">{exp.company} • {exp.year}</p>
+            </div>
           </li>
         ))}
       </ul>

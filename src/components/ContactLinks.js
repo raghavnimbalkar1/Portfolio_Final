@@ -8,7 +8,7 @@ const contactLinks = [
   { name: "Twitter", url: "https://x.com/raghavnimbalkar", username: "@raghavnimbalkar", icon: <FaTwitter /> },
   { name: "GitHub", url: "https://github.com/raghavnimbalkar1", username: "@raghavnimbalkar1", icon: <FaGithub /> },
   { name: "LeetCode", url: "https://leetcode.com/u/RaghavNimbalkar/", username: "@RaghavNimbalkar", icon: <FaKeyboard /> },
-  { name: "LinkedIn", url: "https://www.linkedin.com/in/raghavnimbalkar/", username: "@ragavnimbalkar", icon: <FaLinkedin /> },
+  { name: "LinkedIn", url: "https://www.linkedin.com/in/raghavnimbalkar/", username: "@raghavnimbalkar", icon: <FaLinkedin /> },
 ];
 
 function ContactLinks() {
