@@ -1,19 +1,21 @@
 import React from "react";
 import "../styles.css"; 
+import profilePic from "../assets/pfp.png";
 
 function Header() {
   return (
     <header className="header">
-      <div className="header-image"></div>
       <div className="profile">
-        <img src="path-to-your-profile.jpg" alt="Profile" className="profile-img" />
-        <h1>Alexa Lee</h1>
-        <p>Product Designer at Google</p>
-        <p>San Francisco, CA</p>
-        <div className="buttons">
-          <button>Connect</button>
-          <button>Message</button>
+        <img src={profilePic} alt="Profile" className="profile-img" />
+        <div className="profile-details">
+          <h1>Raghav Nimbalkar</h1>
+          <p>Student at DYPIU</p>
+          <p>Pune, Maharashtra</p>
         </div>
+      </div>
+      <div className="buttons">
+        <button>Connect</button>
+        <button>Message</button>
       </div>
     </header>
   );
