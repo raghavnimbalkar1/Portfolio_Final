@@ -125,11 +125,11 @@ button {
 }
 
 .project-item:hover {
-  background-color: #4f7f70;
+  background-color: #77ad95;
   border-radius: 8px;
   padding: 10px;
   text-align: center;
-  width: 300px;
+  width: 280px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -298,23 +298,25 @@ section {
 }
 
 .contact-card:hover {
-  background-color: #44b9f3;
+  background-color: #77ad95;
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .icon {
   font-size: 2em;
-  color: #77ad95;
+  color: #181918;
 }
 
 .social-name {
+  text-decoration: none !important;
   font-size: 1em;
   font-weight: bold;
   margin-top: 10px;
 }
 
 .username {
+  text-decoration: none !important;
   font-size: 0.9em;
   color: #777;
 }
