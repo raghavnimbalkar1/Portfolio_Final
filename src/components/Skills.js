@@ -1,10 +1,13 @@
 import React from "react";
 
 const skills = [
-  "Illustration",
-  "UI/UX Design",
-  "Front-end Development",
-  "Graphic Design",
+  "NodeJs",
+  "ReactJs",
+  "Python",
+  "MERN Stack",
+  "MongoDB",
+  "C",
+  "HTML, CSS",
 ];
 
 function Skills() {

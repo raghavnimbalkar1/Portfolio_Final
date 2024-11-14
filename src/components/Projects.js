@@ -7,7 +7,8 @@ const projects = [
   { title: "Unihaven", image: unihavenImg, link: "https://github.com/raghavnimbalkar1/UniHaven" },
   { title: "DigitalShelf", image: digitalShelfImg, link: "https://github.com/raghavnimbalkar1/DigitalShelf" },
   { title: "ChainTix", image: chainTixImg, link: "https://github.com/raghavnimbalkar1/ChainTix" },
-  { title: "ChainTix", image: chainTixImg, link: "https://github.com/raghavnimbalkar1/ChainTix" },
+  { title: "Barks & Whiskers", image: chainTixImg, link: "https://github.com/raghavnimbalkar1/ChainTix" },
+  { title: "MyBlog", image: chainTixImg, link: "https://github.com/raghavnimbalkar1/ChainTix" },
 ];
 
 function Projects() {
