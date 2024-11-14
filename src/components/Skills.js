@@ -2,7 +2,7 @@ import React from "react";
 
 const skills = {
   Languages: ["Python" , "JavaScript" , "C"],
-  "Web Technologies": ["NumPy" , "Pandas" , "ReactJS" , "Node.js" , "ExpressJs" , "Bootstrap" , "HTML" , "CSS"],
+  "Libraries & Frameworks": ["NumPy" , "Pandas" , "ReactJS" , "Node.js" , "ExpressJs" , "Bootstrap" , "HTML" , "CSS"],
   Database: ["MongoDB"],
   Tools: ["Git" , "GitHub" , "Postman" , "Visual Studio" , "Photoshop" , "Godot Engine"],
 };

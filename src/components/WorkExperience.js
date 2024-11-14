@@ -9,10 +9,9 @@ function WorkExperience() {
   return (
     <section className="experience">
       <h2>Work Experience</h2>
-      <ul>
+      <ul className="experience-list">
         {experiences.map((exp, index) => (
           <li key={index} className="experience-item">
-            <div className="dot"></div>
             <div className="experience-info">
               <p className="role">{exp.role}</p>
               <p className="company">{exp.company} • {exp.year}</p>

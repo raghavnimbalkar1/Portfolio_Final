@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import unihavenImg from "./chaintix.png";
 import digitalShelfImg from "./chaintix.png";
 import chainTixImg from "./chaintix.png";
@@ -21,6 +21,39 @@ function Projects() {
   const scrollRight = () => {
     scrollContainerRef.current.scrollBy({ left: 300, behavior: "smooth" });
   };
+
+  // Handle swipe gesture
+  useEffect(() => {
+    const scrollContainer = scrollContainerRef.current;
+    let startX;
+
+    const handleTouchStart = (e) => {
+      startX = e.touches[0].clientX;
+    };
+
+    const handleTouchMove = (e) => {
+      const touchX = e.touches[0].clientX;
+      const moveX = startX - touchX;
+
+      if (moveX > 20) scrollRight(); // swipe left to scroll right
+      if (moveX < -20) scrollLeft(); // swipe right to scroll left
+    };
+
+    const handleWheel = (e) => {
+      if (e.deltaY > 0) scrollRight(); // scroll down to scroll right
+      else scrollLeft(); // scroll up to scroll left
+    };
+
+    scrollContainer.addEventListener("touchstart", handleTouchStart);
+    scrollContainer.addEventListener("touchmove", handleTouchMove);
+    scrollContainer.addEventListener("wheel", handleWheel);
+
+    return () => {
+      scrollContainer.removeEventListener("touchstart", handleTouchStart);
+      scrollContainer.removeEventListener("touchmove", handleTouchMove);
+      scrollContainer.removeEventListener("wheel", handleWheel);
+    };
+  }, []);
 
   return (
     <section className="projects">
